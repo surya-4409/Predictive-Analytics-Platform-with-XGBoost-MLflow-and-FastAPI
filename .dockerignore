@@ -1,0 +1,27 @@
+# Git
+.git
+.gitignore
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Secrets
+.env
+
+# Jupyter and Testing
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Development folders (The API container doesn't need these to run)
+notebooks/
+tests/
+reports/
+
+# MLflow (Docker-compose mounts this as a volume, we don't want it baked into the API image)
+mlruns/
